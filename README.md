@@ -3,12 +3,11 @@ Este código de Python se utiliza para detectar los dedos de una mano en tiempo 
 para controlar como una placa Arduino. 
 
 Para operar con él, es necesario importar las siguientes bibliotecas:
-
-  •	cv2: Para capturar y procesar imágenes de la cámara.
-  •	mediapipe: Para la detección de manos y puntos clave.
-  •	numpy: Para operaciones matemáticas y de matrices.
-  •	math: Para cálculos matemáticos.
-  •	pyfirmata: Para interactuar con una placa Arduino.
+      •	cv2: Para capturar y procesar imágenes de la cámara.
+      •	mediapipe: Para la detección de manos y puntos clave.
+      •	numpy: Para operaciones matemáticas y de matrices.
+      •	math: Para cálculos matemáticos.
+      •	pyfirmata: Para interactuar con una placa Arduino.
 
 A continuación se da una descripcion general del código: 
 1.	Función palm_centroid:
