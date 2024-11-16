@@ -12,7 +12,7 @@ Para operar con él, es necesario importar las siguientes bibliotecas:
 A continuación se da una descripcion general del código: 
 1.	La Función palm_centroid calcula el centroide de la palma de la mano a partir de una lista de coordenadas.
 
-2.	Configuración de MediaPipe y OpenCV inicializan los módulos de dibujo y detección de manos de MediaPipe. Luego se configura la captura de video desde la cámara web y se conecta a una placa Arduino en el puerto COM respectivo.
+2.	Se inicializan los módulos de dibujo y detección de manos de MediaPipe y OpenCV. Luego se configura la captura de video desde la cámara web y se conecta a una placa Arduino en el puerto COM respectivo.
 
 3.	Se define los puntos clave para el pulgar, la palma y las puntas y bases de los restantes dedos.
 
