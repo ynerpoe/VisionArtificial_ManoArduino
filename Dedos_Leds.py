@@ -1,7 +1,7 @@
 # Este programa controla un LEDs con pyfirmata mediante Vision Artificial
 # Es necesario instalar StandardFirmata en Arduino 
 # ruta: Examples->Firmata->StandardFirmata
-# By YnerPoe (nov-2024)
+# By YnerPoe-LabTec (nov-2024)
 # python -m serial.tools.list_ports (para conocer puertos disponibles)
 
 import cv2
