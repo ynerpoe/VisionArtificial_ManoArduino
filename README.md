@@ -1,4 +1,7 @@
 # VisionArtificial_ManoArduino
+
+Contacto: labtec@umce.cl
+
 Este código de Python se utiliza para detectar los dedos de una mano en tiempo real a través de una cámara web. Los gestos de la mano son utilizados 
 para controlar una placa de desarrollo Arduino. 
 
