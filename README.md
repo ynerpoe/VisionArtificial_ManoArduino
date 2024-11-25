@@ -7,7 +7,7 @@ para controlar una placa de desarrollo Arduino.
 
 El tutorial completo lo pueden descargar en *.pdf desde este repositorio (Tutorial mano Python.pdf)
 
-Para operar con este código, es necesario importar las siguientes bibliotecas en Python:
+Para operar con este código (Dedos_Leds.py), es necesario importar las siguientes bibliotecas en Python:
 1) cv2: Para capturar y procesar imágenes de la cámara.
 2) mediapipe: Para la detección de manos y puntos clave.
 3) numpy: Para operaciones matemáticas y de matrices.
