@@ -5,6 +5,8 @@ Contacto: labtec@umce.cl
 Este código de Python se utiliza para detectar los dedos de una mano en tiempo real a través de una cámara web. Los gestos de la mano son utilizados 
 para controlar una placa de desarrollo Arduino. 
 
+El tutorial completo lo pueden descargar en *.pdf desde estee repositorio. 
+
 Para operar con este código, es necesario importar las siguientes bibliotecas en Python:
 1) cv2: Para capturar y procesar imágenes de la cámara.
 2) mediapipe: Para la detección de manos y puntos clave.
