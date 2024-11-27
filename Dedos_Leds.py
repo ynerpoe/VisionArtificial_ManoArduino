@@ -23,7 +23,7 @@ def palm_centroid(coordinates_list):
      centroid = int(centroid[0]), int(centroid[1])
      return centroid
 
-# Pulgar, Índice, medio, anular y meñique (dedos)
+# Pulgar, índice, medio, anular y meñique (dedos)
 thumb_points = [1, 2, 4]
 palm_points = [0, 1, 2, 5, 9, 13, 17]
 fingertips_points = [8, 12, 16, 20]
