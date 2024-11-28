@@ -71,8 +71,7 @@ with mp_hands.Hands(
                          x = int(hand_landmarks.landmark[index].x * width)
                          y = int(hand_landmarks.landmark[index].y * height)
                          coordinates_fb.append([x, y])
-                    
-               ##########################
+               
                # Pulgar
                     p1 = np.array(coordinates_thumb[0])
                     p2 = np.array(coordinates_thumb[1])
@@ -83,7 +82,6 @@ with mp_hands.Hands(
                     l3 = np.linalg.norm(p1 - p2)
 
                # Calcular el ángulo de los dedos 
-                    # ojo!!! ValueError: math domain error sometimes
                     angle = degrees(acos((l1**2 + l3**2 - l2**2) / (2 * l1 * l3)))
                     thumb_finger = np.array(False)
                     if angle > 160:
