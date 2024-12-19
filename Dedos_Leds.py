@@ -35,10 +35,10 @@ with mp_hands.Hands(
      min_detection_confidence=0.5,
      min_tracking_confidence=0.5) as hands:
    
-     while True:
+     while cap.isOpened():
           ret, frame = cap.read()
-          if ret == False:
-               print("Ignorar fotograma vacío")
+          if not ret:
+               print("Ignorar frame vacío")
                break
           
           frame = cv2.flip(frame, 1)
@@ -71,7 +71,9 @@ with mp_hands.Hands(
                          x = int(hand_landmarks.landmark[index].x * width)
                          y = int(hand_landmarks.landmark[index].y * height)
                          coordinates_fb.append([x, y])
-               
+
+                    mp_drawing.draw_landmarks(frame, hand_landmarks, mp_hands.HAND_CONNECTIONS)
+                    
                # Pulgar
                     p1 = np.array(coordinates_thumb[0])
                     p2 = np.array(coordinates_thumb[1])
@@ -105,9 +107,7 @@ with mp_hands.Hands(
                     for (i, finger) in enumerate(fingers):
                          if finger == True:
                               thickness[i] = 0
-
-                    mp_drawing.draw_landmarks(frame, hand_landmarks, mp_hands.HAND_CONNECTIONS)
-                   
+             
                # Control de Arduino
                     if thickness[0]== 0:    # Pulgar
                          board.digital[8].write(1)
@@ -147,9 +147,9 @@ with mp_hands.Hands(
                board.digital[11].write(0)
                board.digital[12].write(0)  
           
-          cv2.imshow("Frame", frame)
-
-          if cv2.waitKey(1) & 0xFF == 27:
+          cv2.imshow('Hand Tracking', frame)
+          if cv2.waitKey(10) & 0xFF == ord('q'):
                break
 cap.release()
-cv2.destroyAllWindows()                    
+cv2.destroyAllWindows()        
+board.exit()
