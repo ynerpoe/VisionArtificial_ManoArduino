@@ -2,6 +2,7 @@
 # Es necesario instalar StandardFirmata en Arduino 
 # ruta: Examples->Firmata->StandardFirmata
 # By YnerPoe-LabTec (nov-2024)
+# ynerpoe@gmail.com
 # python -m serial.tools.list_ports (para conocer puertos disponibles)
 
 import cv2
